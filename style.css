@@ -1,6 +1,6 @@
 
 body {
-    background: rgb(172, 241, 252);
+    background: rgb(172, 241, 253);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -37,7 +37,22 @@ body {
     padding-top: 15px;
     font-size: 22px;
     width: 100%;
-    line-height: 1.5;
+    height: 0px;
     overflow: hidden;
-    transition: .5;
+    transition: .5s;
+}
+
+.accordion .content-container .active .answer{
+    height: 150px;
+}
+
+.accordion .content-container .active .question{
+    font-size: 18px;
+    transition: .5s;
+}
+
+.accordion .content-container .active .question::after{
+    content: '-';
+    font-size: 30px;
+    transition: .5s;
 }
