@@ -1,8 +1,10 @@
-const accordian = document.querySelector('.content-container');
 
-for(i = 0; i < accordian.length; i++)
+const accorian = document.querySelectorAll('.content-container');
+
+for(i = 0; i < accorian.length; i++)
 {
-    accordian[i].addEventListener('click', function(){
-        this.classList.toggle('activate');
-    });
+    accorian[i].addEventListener('click', function() {
+    this.classList.toggle('active');
+ });
 }
+
